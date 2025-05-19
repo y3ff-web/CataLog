@@ -21,7 +21,7 @@ const LoginPage = () => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       console.log('Usuario autenticado:', userCredential.user);
-      router.push('/dashboard'); // Redirige a donde necesites
+      router.push('/pricing'); // Redirige a donde necesites
     } catch (firebaseError: unknown) {
       if (firebaseError instanceof Error) {
         console.error('Error de autenticación:', firebaseError.message);
